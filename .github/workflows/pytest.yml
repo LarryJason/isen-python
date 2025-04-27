@@ -22,4 +22,5 @@ jobs:
 
       - name: Run tests with pytest
         run: |
-          pytest
+          pytest /unit_tests
+          pytest /integration_tests

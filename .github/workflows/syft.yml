@@ -46,7 +46,11 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      
+      - name: Download SBOM artifact from previous job
+        uses: actions/download-artifact@v3
+        with:
+          name: sbom-artifact
+
       - name: Install Grype
         run: |
           wget https://github.com/anchore/grype/releases/download/v0.58.1/grype_0.58.1_linux_amd64.deb

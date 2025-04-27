@@ -32,7 +32,7 @@
                           <button type="button" class="btn btn-primary position-relative">
                             Cart
                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                              {{cart | length}}
+                              5
                             </span>
                           </button>
                         </li>
@@ -90,6 +90,7 @@ Clark, MO 65243</p>
           function addToCard(id) {
             card.push(id);
             console.log(card);
+            alert( id+ " Added to cart");
             return card
           }
             function markFavourite(id, reload) {
