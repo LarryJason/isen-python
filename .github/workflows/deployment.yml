@@ -34,7 +34,7 @@ jobs:
 
       - name: Push Docker image to Artifact Registry
         run: |
-          docker push europe-west1-docker.pkg.dev/ilarryjason/isen-python:latest
+          docker push larryjason/isen-python:latest
 
       - name: Deploy to Cloud Run
         uses: google-github-actions/deploy-cloudrun@v2
