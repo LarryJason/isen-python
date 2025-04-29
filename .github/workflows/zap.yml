@@ -37,13 +37,13 @@ jobs:
           cmd_options: '-t 60 -m 1 -r zap_report.html -J zap_report.json'
 
       - name: Upload ZAP JSON report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3.1.3
         with:
           name: zap-json-report
           path: zap_report.json
 
       - name: Upload ZAP HTML report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3.1.3
         with:
           name: zap-html-report
           path: zap_report.html
