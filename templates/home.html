@@ -137,6 +137,7 @@
                 <p class="mb-3">{{ product.description}}</p>
                 <h6>Price</h6>
                 <p class="mb-1">$ {{ product.price}}</p>
+                <button onclick="addToCard('{{product}}')" class="">Add to cart</button>
               </div>
             </div>
           </div>
@@ -210,4 +211,6 @@
     </div>
   </section>
   {% endblock %}
+  <!-- <script src="{% static 'js/scripts.js' %}"></script> -->
 </div>
+
